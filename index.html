@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <h1>Abirami Thangaraj Web</h1>
+    <div class="from">
+    <div id="f">
+
+        <div class="button-box" >
+            <div class="bt" id="o"></div>
+            <button class="t" onclick="login()">login</button>
+            <button class="t" onclick="reg()">register</button>
+        </div >
+        <form id="login" class="l">
+        <label>User name</label>
+        <input type="text">
+        <label>Password</label>
+        <input type="password">
+        <input type="checkbox" class="check-box"><span>Remember Password</span>
+        <button id="b">Login</button>
+        </form>
+             
+    
+
+              <form id="reg" class="r">
+                <label>Email</label>
+        <input type="email">
+        <label>User name</label>
+        <input type="text">
+        <label>Password</label>
+        <input type="password">
+        <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+        <button type="submit" id="b" value="send">Register</button>
+       
+              </form>
+            </div>
+            </div>
+<script>
+    var x=document.getElementById("login");
+    var y=document.getElementById("reg");
+    var z=document.getElementById("o");
+
+    function reg(){
+        x.style.marginLeft="500px";
+        y.style.marginLeft="0px";
+        z.style.marginLeft="110px";
+    }
+    function login(){
+        x.style.marginLeft="0px";
+        y.style.marginLeft="500px";
+        z.style.marginLeft="0px";
+    }
+</script>
+  
+</body>
+</html>
